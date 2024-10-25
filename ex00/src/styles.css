@@ -1,0 +1,161 @@
+/* styles.css */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+/* Contenedor del título y el botón del menú */
+.navbar-title-container {
+	display: flex;
+	align-items: center; /* Alinea verticalmente el botón y el título */
+}
+
+.navbar-title {
+	color: #000000;
+	margin-left: 10px; /* Menos margen para mantenerlos juntos */
+	font-size: 20px;
+}
+
+.menu-button {
+	font-size: 24px;
+	background: none;
+	border: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+/* Estilos para el icono de la barra de navegación */
+.navbar-icon {
+    width: 40px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 40px; /* Mantén la proporción o ajusta según tu diseño */
+    margin: 0 10px; /* Espaciado a los lados del icono */
+	border-radius: 100%;
+}
+
+/* Contenedor del título y el botón del menú */
+.navbar-title-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el botón, el icono y el título */
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+	padding: 8px 15px;
+	font-size: 15px;
+	background-color: #000000;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 1s ease;
+}
+
+.login-button:hover {
+	background-color: #505050;
+}
+
+/* Side menu styling */
+.side-menu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background-color: #333;
+	overflow-y: auto;
+	transition: left 0.8s ease;
+	padding-top: 60px;
+	color: #ffffff;
+}
+
+.side-menu ul {
+	list-style-type: none;
+}
+
+.side-menu ul li a {
+	color: #ffffff;
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	transition: background 0.5s;
+}
+
+.side-menu ul li a:hover {
+	background-color: #444;
+}
+
+.close-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px;
+	background: none;
+	border: 4px;
+	border-color: aqua;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.search-form {
+    display: flex; /* Usar flexbox para alinear el input y el botón */
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+	transition: background-color 1s ease;
+}
+
+.search-button:hover {
+    background-color: #505050;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+	.menu-button {
+		display: none;
+	}
+}
