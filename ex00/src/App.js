@@ -19,7 +19,7 @@ const App = () => {
 
 		try {
 			const res = await axios.post(
-				'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDileyrbzwpAQ6nzhWAeiLWEqbq-mEgz9Y', // Reemplaza con tu clave API
+				'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=#', // Reemplaza con tu clave API
 				{
 					contents: [
 						{
